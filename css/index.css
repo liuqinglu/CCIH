@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    background: url('../img/index_bg1.jpg') no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/*logo*/
+.img_logo img {
+    width: 8vw;
+    height: 10vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+}
+
+/*二维码*/
+.QR_code img {
+    width: 15vw;
+    height: 14vw;
+    position: absolute;
+    left: 2vw;
+    bottom: 2vw;
+}
+
+/*导航*/
+.nav {
+    width: 63vw;
+    height: 43vw;
+    position: absolute;
+    top: 10vw;
+    left: 18vw;
+    /*background: rgba(255, 50, 150, .3)*/
+}
+
+.nav > img {
+    width: 63vw;
+    height: 43vw;
+}
+
+.nav > ul {
+    width: 63vw;
+    height: 43vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    /*background: rgba(0, 255, 208, 0.33);*/
+}
+
+.nav > ul > li {
+    float: left;
+    width: 31.5vw;
+    height: 43vw;
+    /*background: rgba(150, 255, 0, 0.33);*/
+}
+
+.nav > ul > li > a {
+    display: block;
+    width: 31.5vw;
+    height: 43vw;
+    /*background: rgba(180, 250, 36, .3);*/
+}
+
+.nav > ul > li > a:hover {
+    display: block;
+    width: 31.5vw;
+    height: 25.5vw;
+    background: rgba(180, 250, 36, .3);
+    position: absolute;
+    top: 6.5vw;
+}

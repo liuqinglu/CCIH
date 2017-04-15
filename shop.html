@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展厅</title>
+    <link rel="stylesheet" href="css/shop.css?_201704151742">
+</head>
+<body>
+<!--顶部三角形-->
+<div class="triangle"></div>
+<!--logo-->
+<div class="logo">
+    <!--<img src="img/img_logo.png" alt="logo">-->
+</div>
+<!--小轮播图-->
+<div class="small_img_carousel">
+    <div class="box">
+        <div class="picbox">
+            <ul class="piclist mainlist">
+                <!--<li>
+                    <a href="#">
+                        <img src="ImageUp_ByShop/imgUp_20170406160401.png"/>
+                        <span>标题一</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="ImageUp_ByShop/imgUp_20170406160402.png"/>
+                        <span>标题一</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="ImageUp_ByShop/imgUp_20170406160403.png"/>
+                        <span>标题一</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="ImageUp_ByShop/imgUp_20170406160404.png"/>
+                        <span>标题一</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="ImageUp_ByShop/imgUp_20170406160405.png"/>
+                        <span>标题一</span>
+                    </a>
+                </li>-->
+            </ul>
+            <ul class="piclist swaplist"></ul>
+        </div>
+        <div class="og_prev" hidden></div>
+        <div class="og_next" hidden></div>
+    </div>
+</div>
+<!--主图部分-->
+<div class="main">
+    <!--左侧主图区-->
+    <div class="left_img">
+        <!--<img src="img/left_img.png" alt="">-->
+    </div>
+    <!--右侧主轮播区-->
+    <div class="right_img">
+        <div class="right_img_big_carousel">
+            <!--主轮播图-->
+            <ul id="bigPictures">
+                <!--<li>
+                    <img src="ImageUp_ByShop/imgUp_20170406160401.png" alt="">
+                    <span>标题一</span>
+                </li>
+                <li>
+                    <img src="ImageUp_ByShop/imgUp_20170406160402.png" alt="">
+                    <span>标题二</span>
+                </li>
+                <li>
+                    <img src="ImageUp_ByShop/imgUp_20170406160403.png" alt="">
+                    <span>标题三</span>
+                </li>
+                <li>
+                    <img src="ImageUp_ByShop/imgUp_20170406160404.png" alt="">
+                    <span>标题四</span>
+                </li>
+                <li>
+                    <img src="ImageUp_ByShop/imgUp_20170406160405.png" alt="">
+                    <span>标题五</span>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--文案介绍-->
+<div class="copywriting">
+    <!--<div class="copywriting_title">文案介绍</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+</div>
+<!--返回按钮-->
+<div class="back">
+    <a href="http://www.cerambath.org/abc/index.php/CCC"><img src="img/back.png" alt="返回"></a>
+</div>
+<script src="js/jquery-2.2.4.min.js"></script>
+<!--轮播小图-->
+<script src="js/shopSmallAutoPlay.js"></script>
+<script src="js/shop.js?_201704151742"></script>
+<!--轮播大图-->
+<script src="js/shopBigImgAutoPlay.js"></script>
+<script>
+    //    延迟500毫秒执行
+    setTimeout(function () {
+        autoPlay('bigPictures', 'li');
+    }, 500);
+</script>
+</body>
+</html>

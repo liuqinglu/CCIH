@@ -1,0 +1,145 @@
+/*[class ^= col-md-] {
+            background: #eef;
+            border: 1px solid #ccc;
+        }*/
+
+/*左侧分类列表*/
+ul.list-group {
+    margin-top: 30px;
+}
+
+ul.list-group > .list-group-item {
+    width: 200px;
+    color: #000;
+    background: #cfcfcf;
+    border: 1px solid #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: 1vw 0;
+    text-align: center;
+}
+
+li.list-group-item:hover {
+    color: #fff;
+    background: #3ce;
+}
+
+li.list-group-item.listColor {
+    position: relative;
+    width: 240px;
+    left: -20px;
+    border: 10px solid #fff;
+    /*color: #fff;*/
+    background: #4ce;
+    font-size: 1.6vw;
+    font-weight: 900;
+}
+
+/*右侧图片*/
+
+/*PicCarousel轮播图基本样式*/
+ol, ul {
+    list-style: none;
+}
+
+.poster-main {
+    width: 1000px;
+    max-height: 300px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.poster-main a, .poster-main img {
+    display: block;
+}
+
+.poster-main .poster-list {
+    width: 1000px;
+    max-height: 300px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.poster-main .poster-list .poster-item {
+    width: 200px;
+    max-height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.poster-main .poster-btn {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.poster-main .poster-prev-btn {
+    left: 0;
+}
+
+.poster-main .poster-next-btn {
+    right: 0;
+}
+
+/*右侧下方缩略图*/
+
+.img_list {
+    margin-left: 50px;
+    padding: 0;
+    list-style: none;
+    width: 1000px;
+}
+
+.img_list li {
+    float: left;
+    display: block;
+    width: 300px;
+    height: 230px;
+    margin-left: 30px;
+    margin-top: 10px;
+    /*background: #1b6d85;*/
+}
+
+.img_list li div {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.img_list li img {
+    border-radius: 3px;
+    width: 300px;
+    height: 200px;
+}
+
+.img_list li p {
+    display: block;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #eee;
+}
+
+/*返回按钮*/
+.back {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: rgba(200, 200, 200, .3);
+}
+
+.back img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
