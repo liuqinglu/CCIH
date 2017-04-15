@@ -70,7 +70,7 @@ function galleryMessage(GalleryCode) {
             var json_FuSmall = responseObj.TBGalleryViewFuSmall;//幅图-小
             var json_FuBig = responseObj.TBGalleryViewFuBig;//幅图-大
 
-            $('.piclist li').remove();//清空幅图-小
+            $('.bxslider>li').remove();//清空幅图-小
             $('#bigPictures>li').remove();//清空幅图-大
 
             if (responseObj.IsError === false) {
@@ -98,8 +98,8 @@ function galleryMessage(GalleryCode) {
                  * 幅图-小
                  */
                 $.each(json_FuSmall, function (idx, item) {
-                    var li = '<li><a href="#"><img src="' + item.ImgPath + '"/><span>' + item.ImgName + '</span></a></li>';
-                    $('.piclist').append(li);
+                    var li = '<li><img src="' + item.ImgPath + '"/><span>' + item.ImgName + '</span></li>';
+                    $('.bxslider').append(li);
                 });
 
                 /**

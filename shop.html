@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>展厅</title>
     <link rel="stylesheet" href="css/shop.css?_201704151742">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <style>
+    </style>
 </head>
 <body>
 <!--顶部三角形-->
@@ -14,45 +17,16 @@
 </div>
 <!--小轮播图-->
 <div class="small_img_carousel">
-    <div class="box">
-        <div class="picbox">
-            <ul class="piclist mainlist">
-                <!--<li>
-                    <a href="#">
-                        <img src="ImageUp_ByShop/imgUp_20170406160401.png"/>
-                        <span>标题一</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="ImageUp_ByShop/imgUp_20170406160402.png"/>
-                        <span>标题一</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="ImageUp_ByShop/imgUp_20170406160403.png"/>
-                        <span>标题一</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="ImageUp_ByShop/imgUp_20170406160404.png"/>
-                        <span>标题一</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="ImageUp_ByShop/imgUp_20170406160405.png"/>
-                        <span>标题一</span>
-                    </a>
-                </li>-->
-            </ul>
-            <ul class="piclist swaplist"></ul>
-        </div>
-        <div class="og_prev" hidden></div>
-        <div class="og_next" hidden></div>
-    </div>
+    <ul class="bxslider">
+        <!--<li><img src="ImageUp_ByShop/imgUp_20170406160401.png"/><span>标题一</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160402.png"/><span>标题二</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160403.png"/><span>标题三</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160404.png"/><span>标题四</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160405.png"/><span>标题五</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160406.png"/><span>标题六</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160407.png"/><span>标题七</span></li>
+        <li><img src="ImageUp_ByShop/imgUp_20170406160408.png"/><span>标题八</span></li>-->
+    </ul>
 </div>
 <!--主图部分-->
 <div class="main">
@@ -99,14 +73,24 @@
     <a href="http://www.cerambath.org/abc/index.php/CCC"><img src="img/back.png" alt="返回"></a>
 </div>
 <script src="js/jquery-2.2.4.min.js"></script>
-<!--轮播小图-->
-<script src="js/shopSmallAutoPlay.js"></script>
 <script src="js/shop.js?_201704151742"></script>
+<!--轮播小图-->
+<script src="js/jquery.bxslider.js"></script>
 <!--轮播大图-->
 <script src="js/shopBigImgAutoPlay.js"></script>
 <script>
-    //    延迟500毫秒执行
+    /*延迟500毫秒执行*/
     setTimeout(function () {
+        /*轮播小图初始化*/
+        $('.bxslider').bxSlider({
+            slideWidth: 180,//图片宽度
+            minSlides: 2,
+            maxSlides: 3,
+            slideMargin: 10,//图片间距
+            auto: true,
+            controls: false//隐藏左右按钮
+        });
+        /*轮播大图初始化*/
         autoPlay('bigPictures', 'li');
     }, 500);
 </script>
